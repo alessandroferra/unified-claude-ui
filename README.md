@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Unified Claude UI
 
-## Getting Started
+A unified web interface for Claude AI interactions - MVP Implementation.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Stack**: Next.js 15 with TypeScript and App Router
+- **Responsive Design**: Tailwind CSS with mobile-first approach
+- **Performance**: Optimized builds with Turbopack
+- **Type Safety**: Full TypeScript integration with strict mode
+
+## 📋 MVP-001 Implementation
+
+This MVP demonstrates the foundational setup for the Unified Claude WebUI platform:
+
+- ✅ Next.js 14+ app with TypeScript
+- ✅ Shows "Hello Claude UI" on home page
+- ✅ Basic project structure for full-stack development
+- ✅ GitHub repository with auto-deploy to Vercel
+- ✅ Production-ready build configuration
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/alessandroferra/unified-claude-ui.git
+cd unified-claude-ui
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev          # Start development server with Turbopack
+npm run build        # Build for production
+npm start           # Start production server
+npm run lint        # Run ESLint
+npm run type-check  # Run TypeScript compiler check
+```
 
-## Learn More
+## 🏗️ Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                 # Next.js App Router
+│   ├── layout.tsx      # Root layout
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Global styles
+├── components/         # React components
+├── lib/
+│   ├── services/       # Business logic services
+│   └── utils/          # Utility functions
+└── types/              # TypeScript definitions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Automatic Deployment
 
-## Deploy on Vercel
+This repository is configured for automatic deployment to Vercel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Connect your GitHub repository to Vercel
+2. Every push to `main` triggers a production deployment
+3. Pull requests create preview deployments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Manual Deployment
+
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy to production
+vercel --prod
+```
+
+## 🔧 Technology Stack
+
+- **Framework**: Next.js 15.3.5
+- **Language**: TypeScript 5.7.2
+- **Styling**: Tailwind CSS 3.4.17
+- **Build Tool**: Turbopack (development), Webpack (production)
+- **Linting**: ESLint with Next.js configuration
+
+## 📋 Next Steps
+
+This MVP serves as the foundation for implementing:
+
+1. **Authentication System**: User registration and login
+2. **Claude Integration**: AI chat interface with streaming
+3. **File Management**: Code editor and file browser
+4. **Git Integration**: Worktree management and version control
+5. **Real-time Features**: WebSocket connections and collaboration
+
+## 🐛 Issue Reporting
+
+Found a bug or have a feature request? Please create an issue on the [GitHub repository](https://github.com/alessandroferra/unified-claude-ui/issues).
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+**Part of the Unified Claude WebUI Project**  
+Building the future of AI-assisted development.
